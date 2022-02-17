@@ -13,7 +13,6 @@ import { LoginComponent } from './login.component';
   imports: [
     CommonModule,
     LoginRoutingModule,
-    FormGroup,
     ReactiveFormsModule   
   ]
 })
