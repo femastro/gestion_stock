@@ -1,6 +1,6 @@
-<div class="row mt-3">
+<div class="row mt-5">
     <form [formGroup]="formLogin" class="mb-3" (ngSubmit)="onLogin(formLogin.value)">
-        <div class="col-sm-4 mx-auto">
+        <div class="col-sm-5 mx-auto">
             <div class="card">
                 <div class="card-header text-center">
                     <h5>Login</h5>
@@ -8,19 +8,17 @@
                 <div class="card-body">
                     <div class="mb-3">
                         <label for="username" class="form-label">Username</label>
-                        <input type="text" placeholder="Username" class="form-control" formControlName="username">
+                        <input type="text" id="username" placeholder="Username" class="form-control" formControlName="username">
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label">Password</label>
-                        <input type="password" placeholder="Password" class="form-control" formControlName="password">
+                        <input type="password" id="password" placeholder="Password" class="form-control" formControlName="password">
                     </div>
                     <div class="mb-3">
                         <a routerLink="/forgot-password">Forgot Password ?</a>
                     </div>
-                    <div class="row mb-3">
-                        <div class="col-sm-12">
-                            <input type="submit" class="btn btn-primary btn-block" value="Submit">
-                        </div>
+                    <div class="mb-3 text-center">
+                        <input type="submit" class="btn btn-block btn-primary" value="Submit">
                     </div>
                 </div>
             </div>
