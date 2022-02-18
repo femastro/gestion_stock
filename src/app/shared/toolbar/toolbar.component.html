@@ -1,18 +1,18 @@
 <div class="row bg-light">
     <div class="col-10">
         <nav class="nav">
-            <a class="nav-link active" aria-current="page" href="#">Stock</a>
-            <a class="nav-link" href="#">Entradas</a>
-            <a class="nav-link" href="#">Salidas</a>
+            <a class="nav-link active" aria-current="page" routerLink="stock">Stock</a>
+            <a class="nav-link" routerLink="entradas">Entradas</a>
+            <a class="nav-link" routerLink="salidas">Salidas</a>
         </nav>
     </div>
     <div class="col-2">
         <nav class="nav" *ngIf="!isLogged else viewLogin">
-            <a class="nav-link active" aria-current="page" routerLink="/login">Login</a>
+            <a class="nav-link active" aria-current="page" routerLink="login">Login</a>
         </nav>
     </div>
 </div>
 
 <ng-template #viewLogin>
-    <a class="nav-link active" routerLink="/">LogOut</a>
+    <a class="nav-link active" >LogOut</a>
 </ng-template>
