@@ -7,6 +7,7 @@
       "@app/*": ["src/app/*"],
       "@shared/*": ["src/app/shared/*"],
       "@pages/*": ["src/app/pages/*"],
+      "@interfaces/*":["src/app/interfaces/*"],
       "@auth/*": ["src/app/auth/*"],
       "@env/*": ["src/environments/*"],
     },

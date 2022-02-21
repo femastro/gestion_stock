@@ -1,3 +1,4 @@
+import { AuthService } from '@auth/service/auth.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { IformLogin } from 'src/app/interfaces/login.interface';
@@ -9,7 +10,10 @@ import { IformLogin } from 'src/app/interfaces/login.interface';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private authSvc: AuthService,
+
+  ) { }
 
   ngOnInit(): void {
     
@@ -23,5 +27,7 @@ export class LoginComponent implements OnInit {
   onLogin(data: IformLogin){
     console.log('Data => ', data)
   }
+
+
 
 }
